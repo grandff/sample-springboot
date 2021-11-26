@@ -4,3 +4,6 @@
 4. MySql Install in window : https://goddaehee.tistory.com/277
 5. MySql Basic : https://futurists.tistory.com/11
 6. Node Rest APi : https://any-ting.tistory.com/13
+7. Express MySql : https://ichi.pro/ko/cheoeumbuteo-nodejs-mich-mysqleul-sayonghayeo-rest-api-saengseong-14397877526049
+8. Tensorflow js pitch types : https://www.tensorflow.org/js/tutorials/training/nodejs_training?hl=ko
+9. 생활코딩 - tensorflow js : https://opentutorials.org/course/4628/29708
