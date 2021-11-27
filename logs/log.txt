@@ -1,15 +1,18 @@
-[INFO ] 21:47:27.189 com.kjm.test.demo.DemoApplication - Starting DemoApplication using Java 11.0.12 on DESKTOP-198B43V with PID 24316 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 21:47:27.190 com.kjm.test.demo.DemoApplication - No active profile set, falling back to default profiles: default
-[INFO ] 21:47:27.235 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 21:47:27.235 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[WARN ] 21:47:27.778 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.kjm.test.demo]' package. Please check your configuration.
-[INFO ] 21:47:28.467 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 21:47:28.476 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 21:47:28.477 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 21:47:28.477 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 21:47:28.548 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 21:47:28.548 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
-[INFO ] 21:47:29.110 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 21:47:29.123 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 21:47:29.138 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 21:47:29.280 com.kjm.test.demo.DemoApplication - Started DemoApplication in 2.517 seconds (JVM running for 2.978)
+[INFO ] 21:30:24.563 com.kjm.test.main.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13736 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 21:30:24.567 com.kjm.test.main.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 21:30:24.611 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 21:30:24.612 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[WARN ] 21:30:25.157 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.kjm.test.main]' package. Please check your configuration.
+[INFO ] 21:30:25.900 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 21:30:25.910 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 21:30:25.910 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 21:30:25.911 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 21:30:25.980 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 21:30:25.981 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1369 ms
+[INFO ] 21:30:26.652 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 21:30:26.663 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 21:30:26.679 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 21:30:26.818 com.kjm.test.main.MainController - Started MainController in 2.702 seconds (JVM running for 3.289)
+[INFO ] 21:30:44.319 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 21:30:44.320 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 21:30:44.322 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms

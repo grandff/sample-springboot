@@ -6,6 +6,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.kjm.test.demo.model.Project;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,16 +15,21 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 public class InfoController {
+
+    // service 생성자 주입
+    // 생성자 주입하려는 service에 service annotation이 꼭 있어야함
+    private InfoService infoService;
+
+    @Autowired
+    public InfoController(InfoService infoService){
+        this.infoService = infoService;
+    }
+
     @GetMapping("/info")
     public Object projectInfo(){
-        log.debug("test! info is start");
-        Project project = new Project();
-        project.projectName = "kjm";
-        project.author = "hello-kjm";
-        project.createdDate = new Date();
-        return project;
-        // test code
-        // return "Test rest api with mysql";
+        log.debug("/info start");
+        Project project = infoService.getProjectInfo();        
+        return project;        
     }
 
     // gson을 이용해 json 리턴

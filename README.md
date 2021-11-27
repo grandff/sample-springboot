@@ -26,5 +26,16 @@
 ## slf4j + logback 로그 설정
 
 ## Service 생성
+1. Service Annotation 활용
+2. 필드 주입이 아닌 생성자 주입 방법을 권장
+    - 생성자 주입 방법의 장점
+        a) 순환참조 방지 : A가 B를 참조하고 B가 A를 참조할 때의 문제
+        b) 테스트하기에 좋음
+        c) final 선언 가능
+        d) 오류 방지 
+3. Service Annotation을 통해 bean에 service 등록
+4. Autowired Annotation이 추가된 생성자에서 BeanFactory에서 해당 Service를 찾음
+5. 생성자 주입
+6. 해당 서비스 호출 후 사용
 
 ## 
