@@ -1,9 +1,11 @@
 package com.kjm.test.demo;
 
 import java.util.Date;
+import java.util.List;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.kjm.test.demo.model.City;
 import com.kjm.test.demo.model.Project;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,5 +53,13 @@ public class InfoController {
         jo.add("follower", ja);
 
         return jo.toString();
+    }
+
+    // service의 list 호출
+    @GetMapping("/cityList")
+    public Object cityList(){
+        log.debug("/citylist start");
+        List<City> cityList = infoService.getCityList();
+        return cityList;
     }
 }

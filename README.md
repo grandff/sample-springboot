@@ -38,4 +38,12 @@
 5. 생성자 주입
 6. 해당 서비스 호출 후 사용
  
-## 
+## Spring jdbc namedParameterJdbcTemplate, MySQL 연동
+1. Mybatis가 아닌 jdbcTemplate 사용
+    - 왜그런지에 대해선 https://hello-bryan.tistory.com/335 참고
+2. mybatis dependency를 제거하고 jdbc dependency 추가하기
+3. 테스트하려는 table에 맞게 model과 repository 생성
+4. 소스 관리를 위해 class를 만들어서 Groovy의 Multiline String으로 선언
+    - Groovy를 사용하기 위해 plugins과 dependencies를 추가
+    - repository 패키지 아래에 groovy file 생성(sql 옮기기. SQL 관리용)
+    - RowMapper도 별도로 분리하기 위해 CityRowMapper.java 생성(RowMapper 옮기기)
