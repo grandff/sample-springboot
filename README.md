@@ -45,5 +45,9 @@
 3. 테스트하려는 table에 맞게 model과 repository 생성
 4. 소스 관리를 위해 class를 만들어서 Groovy의 Multiline String으로 선언
     - Groovy를 사용하기 위해 plugins과 dependencies를 추가
-    - repository 패키지 아래에 groovy file 생성(sql 옮기기. SQL 관리용)
+    - repository 패키지 아래에 groovy file 생성(sql 옮기기. SQL 관리용) !!! vscode인지 무슨 문제인지 모르겠지만 groovy를 못찾아서 그냥 자바로 처리했음
     - RowMapper도 별도로 분리하기 위해 CityRowMapper.java 생성(RowMapper 옮기기)
+5. service와 controller에도 list mapping 추가
+
+## DBCP - HikariCP
+1. Connection Pool 중 성능이 제일 좋은 HikariCP 선택

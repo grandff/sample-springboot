@@ -146,3 +146,22 @@ java.sql.SQLException: Column 'contrycode' not found.
 [INFO ] 12:54:59.453 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
 [INFO ] 12:54:59.469 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
 [INFO ] 12:54:59.488 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 12:59:44.852 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 23284 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 12:59:44.853 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 12:59:45.067 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 12:59:45.068 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 12:59:46.255 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 12:59:46.264 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 12:59:46.264 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 12:59:46.265 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 12:59:46.331 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 12:59:46.332 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1263 ms
+[INFO ] 12:59:46.823 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 12:59:46.835 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 12:59:46.853 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 12:59:46.980 com.kjm.test.MainController - Started MainController in 2.545 seconds (JVM running for 2.992)
+[INFO ] 12:59:48.987 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 12:59:48.988 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 12:59:48.991 o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 12:59:49.039 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 12:59:49.364 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

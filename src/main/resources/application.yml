@@ -6,3 +6,12 @@ spring :
         url : jdbc:mysql://localhost:5000/world?serverTimeZone=UTC&CharacterEncoding=UTF-8
         username : root
         password : admin
+        hikari :
+            maximum-pool-size : 10  # 최대 pool size. default가 10
+            connection-timeout : 5000
+            connection-init-sql : SELECT 1
+            validation-timeout : 2000
+            minimum-idle : 10
+            idle-timeout : 600000
+            max-lifetime : 1800000
+            auto-commit : true
