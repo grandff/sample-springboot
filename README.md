@@ -61,3 +61,13 @@
 5. repository에 파라미터 포함해서 method 추가
     - 파라미터 전달을 위해 MapSqlParameterSource 사용
 6. 정확히 서순은 sql -> repository -> service -> controller 순으로 하면 맞을듯
+
+## GetMapping, PostMapping
+
+## jdbcTemplate - Insert, Update, Delete
+
+## File Upload / Download / List
+
+## form-data + json list string
+
+## json string model class mapping

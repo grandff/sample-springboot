@@ -17,3 +17,177 @@
 [INFO ] 22:24:28.762 o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
 [INFO ] 22:24:43.831 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 [INFO ] 22:24:44.158 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 22:35:53.597 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:35:53.599 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:35:53.794 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 22:35:53.795 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 22:35:54.895 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:35:54.905 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:35:54.905 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:35:54.906 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:35:54.968 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:35:54.969 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1174 ms
+[INFO ] 22:35:55.529 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:35:55.545 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:35:55.564 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:35:55.713 com.kjm.test.MainController - Started MainController in 2.523 seconds (JVM running for 2.981)
+[INFO ] 22:36:01.768 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 22:36:01.769 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 22:36:01.771 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 22:40:13.077 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:40:13.078 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:40:13.350 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:40:13.351 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:40:13.351 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:40:13.352 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:40:13.369 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:40:13.369 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 288 ms
+[INFO ] 22:40:13.569 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:40:13.573 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:40:13.574 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:40:13.671 com.kjm.test.MainController - Started MainController in 0.632 seconds (JVM running for 260.939)
+[INFO ] 22:40:13.673 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:41:16.841 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:41:16.841 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:41:17.042 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:41:17.043 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:41:17.043 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:41:17.044 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:41:17.060 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:41:17.061 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 217 ms
+[WARN ] 22:41:17.154 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController' method 
+com.kjm.test.demo.InfoController#cityAdd2(String, String, String, int)
+to {GET [/info/cityAdd]}: There is already 'infoController' bean method
+com.kjm.test.demo.InfoController#cityAdd(City) mapped.
+[INFO ] 22:41:17.155 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[ERROR] 22:41:17.270 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController' method 
+com.kjm.test.demo.InfoController#cityAdd2(String, String, String, int)
+to {GET [/info/cityAdd]}: There is already 'infoController' bean method
+com.kjm.test.demo.InfoController#cityAdd(City) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.kjm.test.MainController.main(MainController.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController' method 
+com.kjm.test.demo.InfoController#cityAdd2(String, String, String, int)
+to {GET [/info/cityAdd]}: There is already 'infoController' bean method
+com.kjm.test.demo.InfoController#cityAdd(City) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:395)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+[INFO ] 22:41:31.861 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:41:31.862 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:41:32.054 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:41:32.055 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:41:32.055 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:41:32.055 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:41:32.073 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:41:32.073 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 209 ms
+[INFO ] 22:41:32.250 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:41:32.254 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:41:32.256 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:41:32.356 com.kjm.test.MainController - Started MainController in 0.526 seconds (JVM running for 339.625)
+[INFO ] 22:41:32.357 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:41:38.618 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 22:41:38.618 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 22:41:38.620 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 22:45:11.004 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:45:11.004 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:45:11.178 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:45:11.179 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:45:11.179 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:45:11.179 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:45:11.195 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:45:11.196 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 190 ms
+[INFO ] 22:45:11.364 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:45:11.368 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:45:11.370 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:45:11.466 com.kjm.test.MainController - Started MainController in 0.489 seconds (JVM running for 558.734)
+[INFO ] 22:45:11.467 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:45:18.168 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 22:45:18.169 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 22:45:18.170 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[WARN ] 22:45:18.176 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+[INFO ] 22:46:23.720 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:46:23.721 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:46:23.935 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:46:23.936 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:46:23.936 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:46:23.936 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:46:23.959 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:46:23.960 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 236 ms
+[INFO ] 22:46:24.185 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:46:24.188 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:46:24.190 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:46:24.290 com.kjm.test.MainController - Started MainController in 0.597 seconds (JVM running for 631.559)
+[INFO ] 22:46:24.292 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:48:36.149 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:48:36.150 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:48:36.327 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:48:36.328 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:48:36.328 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:48:36.328 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:48:36.343 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:48:36.344 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 192 ms
+[INFO ] 22:48:36.528 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:48:36.531 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:48:36.533 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:48:36.633 com.kjm.test.MainController - Started MainController in 0.508 seconds (JVM running for 763.902)
+[INFO ] 22:48:36.636 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:48:38.156 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:48:38.156 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:48:38.311 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:48:38.312 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:48:38.312 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:48:38.312 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:48:38.328 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:48:38.328 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 170 ms
+[INFO ] 22:48:38.479 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:48:38.482 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:48:38.483 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:48:38.585 com.kjm.test.MainController - Started MainController in 0.453 seconds (JVM running for 765.854)
+[INFO ] 22:48:38.587 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 22:49:59.930 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 13900 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 22:49:59.931 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 22:50:00.108 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 22:50:00.109 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:50:00.109 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:50:00.110 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 22:50:00.124 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:50:00.125 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 193 ms
+[INFO ] 22:50:00.312 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:50:00.316 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 22:50:00.318 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 22:50:00.414 com.kjm.test.MainController - Started MainController in 0.506 seconds (JVM running for 847.682)
+[INFO ] 22:50:00.415 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

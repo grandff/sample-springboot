@@ -9,8 +9,12 @@ import com.kjm.test.demo.model.City;
 import com.kjm.test.demo.model.Project;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -91,5 +95,63 @@ public class InfoController {
         log.debug("countryCode = {}, population = {}", ctCode, population);
         List<City> cityList = infoService.findCityByCodeAndPopulation(ctCode, population);
         return cityList;
+    }
+
+    // GetMapping - PathVariable
+    // localhost:8000/info/cityAdd/TEST/TST/Seoul/100
+    @GetMapping("cityAdd/{name}/{countryCode}/{district}/{population}")    
+    public Object cityAdd(
+        @PathVariable(value="name") String name,
+        @PathVariable(value="countryCode") String ctCode,
+        @PathVariable(value="district") String district,
+        @PathVariable(value="population") int population
+    ){
+        log.debug("name = {}, ctCode = {}, district = {}, population = {}" ,name, ctCode, district, population);
+        return "ok";
+    }
+
+    // GetMapping - RequestParam
+    // localhost:8000/info/cityAdd?name=TEST&countryCode=TST&district=Seoul&population=100
+    @GetMapping("cityAdd")
+    public Object cityAdd2(
+        @RequestParam(value="name", required = true) String name,
+        @RequestParam(value="countryCode", required = true) String ctCode,
+        @RequestParam(value="district", required = true) String district,
+        @RequestParam(value="population", required=false, defaultValue = "0") int population        
+    ){
+        log.debug("name = {}, ctCode = {}, district = {}, population = {}" ,name, ctCode, district, population);
+        return "ok";
+    }
+
+    // 파라미터로 받는 필드들이 City Class에 다 있으므로 간단히 쓸 수도 있음
+    @GetMapping(value = "cityAddSimple")
+    public Object cityAdd(City city){
+        log.debug("city = {}", city.toString());
+        return "ok";
+    }
+
+    // PostMapping
+    @PostMapping(value="cityAdd")
+    public ResponseEntity<City> cityAdd3(@RequestBody City city){
+        log.debug("city = {}", city.toString());
+        return new ResponseEntity<>(city, HttpStatus.OK);
+    }
+
+    /*
+        리턴을 굳이 안보내고 싶다면
+        <City> -> <Void>
+        ResponseEntity<>(city, HttpStatus.OK) -> ResponseEntity<>(HttpStatus.OK) 
+    */
+
+    // Query Params PostMapping with try catch
+    // entity 타입이 string 이여야함
+    @PostMapping(value="cityAddParam")
+    public ResponseEntity<String> cityAdd4(String name, String countryCode, String district, Integer population){
+        try{
+            log.debug(name);
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);    
+        }
+        return new ResponseEntity<>("", HttpStatus.OK);
     }
 }

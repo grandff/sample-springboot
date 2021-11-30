@@ -7,3 +7,4 @@
 7. Express MySql : https://ichi.pro/ko/cheoeumbuteo-nodejs-mich-mysqleul-sayonghayeo-rest-api-saengseong-14397877526049
 8. Tensorflow js pitch types : https://www.tensorflow.org/js/tutorials/training/nodejs_training?hl=ko
 9. 생활코딩 - tensorflow js : https://opentutorials.org/course/4628/29708
+9. Spring Boot, MySql Deploy to heroku : https://parkbongil.github.io/heroku-spring-boot/
