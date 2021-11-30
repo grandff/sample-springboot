@@ -31,4 +31,9 @@ public class InfoService {
     public List<City> getCityList() {
         return this.cityRepository.findList();
     }
+
+    // select list where condition
+    public List<City> findCityByCodeAndPopulation(String countryCode, int population){
+        return this.cityRepository.findByCountryCodeAndPopulation(countryCode, population);
+    }
 }

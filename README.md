@@ -51,3 +51,13 @@
 
 ## DBCP - HikariCP
 1. Connection Pool 중 성능이 제일 좋은 HikariCP 선택
+
+## jdbcTemplate - Select
+1. Controller에 RequestMapping을 추가해서 route 관리
+2. PathVariable 또는 RequestParam을 통해 파라미터 전달
+3. service에 method 추가
+4. sql 추가
+    - statement 파라미터가 :columnName으로 되어있는데 여기로 전달함
+5. repository에 파라미터 포함해서 method 추가
+    - 파라미터 전달을 위해 MapSqlParameterSource 사용
+6. 정확히 서순은 sql -> repository -> service -> controller 순으로 하면 맞을듯
