@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
@@ -153,5 +154,69 @@ public class InfoController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);    
         }
         return new ResponseEntity<>("", HttpStatus.OK);
+    }
+
+    // insert
+    /*
+        countryCode에는 Foreign key가 걸려있으므로 이미 있는 code를 입력해야함
+        ex)
+        URL : localhost:8000/info/cityInsert
+        BODY : 
+        {
+            "name" : "TEST",
+            "countryCode" : "KOR",
+            "district" : "Seoul",
+            "population" : 100
+        }
+    */
+    @PostMapping(value="cityInsert")
+    public ResponseEntity<City> cityInsert(@RequestBody City city){
+        try{
+            log.debug("city = {}", city.toString());
+            return new ResponseEntity<>(infoService.insert(city), HttpStatus.OK);
+        }catch(Exception e){
+            log.error(e.toString());
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // update
+    /*
+        id가 꼭 포함되어야함
+        ex)
+        URL : localhost:8000/info/cityUpdate
+        BODY :
+        {
+            "id" : 4081,
+            "name" : "TEST2",
+            "countryCode" : "KOR",
+            "district" : "LA",
+            "population" : 500
+        }
+    */
+    @PostMapping(value = "cityUpdate")
+    public ResponseEntity<String> cityUpdate(@RequestBody City city){
+        try{
+            log.debug("city = {}", city.toString());
+            Integer result = infoService.updateById(city);
+            return new ResponseEntity<>(String.format("%d updated", result), HttpStatus.OK);
+        }catch(Exception e){
+            log.error(e.toString());
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // delete 
+    @ResponseBody
+    @PostMapping(value ="cityDelete")
+    public ResponseEntity<String> cityDelete(@RequestParam(value="id") Integer id){
+        try{
+            log.debug("city id = {}", id);
+            Integer result = infoService.deleteById(id);
+            return new ResponseEntity<>(String.format("%d deleted", result), HttpStatus.OK);
+        }catch(Exception e){
+            log.error(e.toString());
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }

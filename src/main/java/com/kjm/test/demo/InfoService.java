@@ -36,4 +36,19 @@ public class InfoService {
     public List<City> findCityByCodeAndPopulation(String countryCode, int population){
         return this.cityRepository.findByCountryCodeAndPopulation(countryCode, population);
     }
+
+    // insert
+    public City insert(City city){
+        return this.cityRepository.insert(city);
+    }
+
+    // update
+    public Integer updateById(City city){
+        return this.cityRepository.updateById(city);
+    }
+
+    // delete
+    public Integer deleteById(Integer id){
+        return this.cityRepository.deleteById(id);
+    }
 }

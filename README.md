@@ -65,6 +65,8 @@
 ## GetMapping, PostMapping
 
 ## jdbcTemplate - Insert, Update, Delete
+1. PostMapping 으로 CRUD 구현
+
 
 ## File Upload / Download / List
 

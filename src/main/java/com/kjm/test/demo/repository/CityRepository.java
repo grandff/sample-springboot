@@ -8,6 +8,8 @@ import org.springframework.jdbc.core.namedparam.EmptySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -37,5 +39,37 @@ public class CityRepository {
         String query = CitySql.SELECT + CitySql.COUNTRY_CODE_CONDITION + CitySql.POPULATION_CONDITION;   
         SqlParameterSource param = new MapSqlParameterSource("countryCode", countryCode).addValue("population", population);
         return namedParameterJdbcTemplate.query(query, param, this.cityRowMapper);
+    }
+
+    // insert
+    public City insert(City city){        
+        KeyHolder keyHolder = new GeneratedKeyHolder(); // 자동 생성되는 id 값을 가져오기 위함??
+        SqlParameterSource parameterSource = new MapSqlParameterSource("name", city.getName())
+        .addValue("countryCode", city.getCountryCode())
+        .addValue("district", city.getDistrict())
+        .addValue("population", city.getPopulation());
+
+        int result = namedParameterJdbcTemplate.update(CitySql.INSERT, parameterSource, keyHolder);
+
+        log.debug("{} inserted, new id = {}", result, keyHolder.getKey());
+        city.setId(keyHolder.getKey().intValue());  // return 시켜주는 city에 id 값 설정
+        return city;
+    }
+
+    // update
+    public Integer updateById(City city){
+        String query = CitySql.UPDATE + CitySql.ID_CONDITION;
+        SqlParameterSource parameterSource = new MapSqlParameterSource("id", city.getId())
+        .addValue("name", city.getName())
+        .addValue("countryCode", city.getCountryCode())
+        .addValue("district", city.getDistrict())
+        .addValue("population", city.getPopulation());
+        return namedParameterJdbcTemplate.update(query, parameterSource);
+    }
+
+    // delete
+    public Integer deleteById(Integer id){
+        SqlParameterSource parameterSource = new MapSqlParameterSource("id", id);
+        return namedParameterJdbcTemplate.update(CitySql.DELETE + CitySql.ID_CONDITION, parameterSource);
     }
 }
