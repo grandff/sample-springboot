@@ -1,6 +1,11 @@
 server :
     port : 8000
 spring :
+    servlet :
+        multipart :
+            max-file-size : 10MB    # 총 파일 사이즈
+            max-request-size : 10MB # request 파일 사이즈
+            location : D:\dev\workspaces\demo\upload
     datasource :
         driver-class-name : com.mysql.cj.jdbc.Driver
         url : jdbc:mysql://localhost:5000/world?serverTimeZone=UTC&CharacterEncoding=UTF-8

@@ -1,14 +1,23 @@
 package com.kjm.test.demo;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.kjm.test.demo.model.City;
+import com.kjm.test.demo.model.FileData;
 import com.kjm.test.demo.model.Project;
+import com.kjm.test.demo.storage.StorageService;
 
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +28,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -30,10 +41,12 @@ public class InfoController {
     // service 생성자 주입
     // 생성자 주입하려는 service에 service annotation이 꼭 있어야함
     private InfoService infoService;
+    private StorageService storageService;
 
     @Autowired
-    public InfoController(InfoService infoService){
+    public InfoController(InfoService infoService, StorageService storageService){
         this.infoService = infoService;
+        this.storageService = storageService;
     }
 
     @GetMapping("/project")
@@ -218,5 +231,77 @@ public class InfoController {
             log.error(e.toString());
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+
+    // file upload
+    // class에 @RestController가 있으면 @ResponseBody 생략 가능
+    // form data name은 multipartfile 매개변수 이름과 동일해야함
+    @PostMapping(value="uploadFile")
+    public ResponseEntity<String> uploadFile(MultipartFile file) throws IllegalStateException, IOException{
+        if(!file.isEmpty()){
+            log.debug("file org name = {}", file.getOriginalFilename());
+            log.debug("file content type = {}", file.getContentType());
+            file.transferTo(new File(file.getOriginalFilename()));
+        }else{
+            return new ResponseEntity<>("file is empty", HttpStatus.INTERNAL_SERVER_ERROR);    
+        }
+
+        return new ResponseEntity<>("ok", HttpStatus.OK);
+    }
+
+    // file upload with service
+    @PostMapping(value="upload")
+    public ResponseEntity<String> upload(MultipartFile file) throws IllegalStateException, IOException, NullPointerException{
+        if(!file.isEmpty()){
+            log.debug("file org name = {}", file.getOriginalFilename());
+            log.debug("file content type = {}", file.getContentType());
+            storageService.store(file);   
+        }else{
+            return new ResponseEntity<>("file is empty", HttpStatus.INTERNAL_SERVER_ERROR);    
+        }        
+        return new ResponseEntity<>("ok", HttpStatus.OK);
+    }
+
+    // file download
+    @GetMapping(value="download")
+    public ResponseEntity<Resource> serveFile(@RequestParam(value="filename") String filename){
+        Resource file = storageService.loadAsResource(filename);
+        return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
+    }
+
+    // file all delete
+    @PostMapping(value = "deleteAll")
+    public ResponseEntity<String> deleteAll(){
+        storageService.deleteAll();
+        return new ResponseEntity<>("ok", HttpStatus.OK);
+    }
+
+    // file delete
+    @PostMapping(value ="delete")
+    public ResponseEntity<String> delete(@RequestParam(value="filename") String filename){
+        storageService.delete(filename);
+        return new ResponseEntity<>("ok", HttpStatus.OK);
+    }
+
+    // file list
+    @GetMapping("fileList")
+    public ResponseEntity<List<FileData>> getListFiles(){
+        List<FileData> fileInfos = storageService.loadAll()
+        .map(path -> {
+            FileData data = new FileData();
+            String filename = path.getFileName().toString();
+            data.setFilename(filename);
+            data.setUrl(MvcUriComponentsBuilder.fromMethodName(InfoController.class, "serveFile", filename).build().toString());
+            try {
+                data.setSize(Files.size(path));
+            } catch (Exception e) {
+                log.error(e.getMessage());
+            }
+
+            return data;
+        })
+        .collect(Collectors.toList());
+
+        return ResponseEntity.status(HttpStatus.OK).body(fileInfos);
     }
 }

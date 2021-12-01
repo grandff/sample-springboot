@@ -67,8 +67,16 @@
 ## jdbcTemplate - Insert, Update, Delete
 1. PostMapping 으로 CRUD 구현
 
-
 ## File Upload / Download / List
+1. file 관련 설정을 application.yml에 추가
+2. file 관련 서비스 처리를 위해 storage package 생성
+    - interface로 service java 생성
+    - file을 처리할 수 있는 method 추가
+3. controller에 stoargeservice를 사용하기 위해 생성자 주입 및 method 추가
+4. download 구현을 위해 implement 메소드 중 load와 loadAsResource 작성
+5. controller에 다운로드 api 추가
+6. delete method 구현을 위해 코드 추가
+7. file list의 경우 file들의 정보를 list에 담아서 리턴해야하기 때문에 FileData라는 class 추가
 
 ## form-data + json list string
 
