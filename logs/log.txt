@@ -1,452 +1,33 @@
-[INFO ] 11:32:34.960 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:32:34.962 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:32:35.205 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 11:32:35.206 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 11:32:36.505 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:32:36.516 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:32:36.517 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:32:36.517 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:32:36.586 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:32:36.587 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1380 ms
-[INFO ] 11:32:37.187 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:32:37.200 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:32:37.223 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:32:37.373 com.kjm.test.MainController - Started MainController in 3.052 seconds (JVM running for 3.773)
-[INFO ] 11:35:14.061 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 11:35:14.062 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 11:35:14.065 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 11:35:14.186 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 11:35:14.558 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[ERROR] 11:35:14.661 com.kjm.test.demo.InfoController - org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [ INSERT INTO CITY (name, countryCode, district, population) values (?, ?, ?, ?) ]; Cannot add or update a child row: a foreign key constraint fails (`world`.`city`, CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)); nested exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`world`.`city`, CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`))
-[INFO ] 11:37:10.416 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 11:37:10.431 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 11:37:10.501 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:37:10.502 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:37:10.796 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:37:10.797 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:10.797 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:37:10.798 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:37:10.815 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:37:10.816 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 310 ms
-[INFO ] 11:37:11.021 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:37:11.026 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:11.028 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:37:11.139 com.kjm.test.MainController - Started MainController in 0.67 seconds (JVM running for 277.539)
-[INFO ] 11:37:11.141 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:37:17.717 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:37:17.717 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:37:17.916 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:37:17.917 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:17.917 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:37:17.918 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:37:17.934 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:37:17.935 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 215 ms
-[INFO ] 11:37:18.119 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:37:18.124 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:18.125 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:37:18.227 com.kjm.test.MainController - Started MainController in 0.54 seconds (JVM running for 284.627)
-[INFO ] 11:37:18.229 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:37:30.873 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:37:30.874 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:37:31.091 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:37:31.092 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:31.092 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:37:31.092 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:37:31.110 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:37:31.110 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 234 ms
-[INFO ] 11:37:31.294 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:37:31.299 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:37:31.301 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:37:31.405 com.kjm.test.MainController - Started MainController in 0.561 seconds (JVM running for 297.805)
-[INFO ] 11:37:31.407 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:39:24.011 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:39:24.011 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:39:24.189 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:39:24.190 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:39:24.190 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:39:24.191 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:39:24.209 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:39:24.210 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 197 ms
-[INFO ] 11:39:24.371 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:39:24.376 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:39:24.378 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:39:24.487 com.kjm.test.MainController - Started MainController in 0.504 seconds (JVM running for 410.887)
-[INFO ] 11:39:24.489 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:41:39.258 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:41:39.259 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:41:39.481 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:41:39.482 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:41:39.483 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:41:39.483 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:41:39.502 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:41:39.503 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 241 ms
-[INFO ] 11:41:39.696 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:41:39.701 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:41:39.703 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:41:39.810 com.kjm.test.MainController - Started MainController in 0.58 seconds (JVM running for 546.209)
-[INFO ] 11:41:39.813 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:42:09.649 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:42:09.650 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:42:09.846 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:42:09.847 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:42:09.847 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:42:09.848 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:42:09.863 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:42:09.864 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 212 ms
-[INFO ] 11:42:10.028 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:42:10.031 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:42:10.033 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:42:10.139 com.kjm.test.MainController - Started MainController in 0.518 seconds (JVM running for 576.538)
-[INFO ] 11:42:10.141 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:44:50.260 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:44:50.261 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:44:50.454 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:44:50.455 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:44:50.455 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:44:50.456 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:44:50.472 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:44:50.472 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 209 ms
-[INFO ] 11:44:50.630 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:44:50.633 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:44:50.635 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:44:50.735 com.kjm.test.MainController - Started MainController in 0.51 seconds (JVM running for 737.135)
-[INFO ] 11:44:50.736 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:45:19.449 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 11:45:19.449 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 11:45:19.451 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 11:45:19.470 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-[INFO ] 11:45:19.492 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-[ERROR] 11:45:19.495 com.kjm.test.demo.InfoController - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [ UPDATE CITY SET NAME = ?, COUNTRYCODE = ?, DISTRICT = ?, POPULATION = ?) WHERE 1=1  AND id = ? ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') WHERE 1=1  AND id = 4081' at line 1
-[INFO ] 11:45:35.613 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-[INFO ] 11:45:35.626 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-[INFO ] 11:45:35.686 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:45:35.686 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:45:35.853 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:45:35.854 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:45:35.854 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:45:35.854 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:45:35.868 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:45:35.868 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 180 ms
-[INFO ] 11:45:36.023 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:45:36.026 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:45:36.028 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:45:36.128 com.kjm.test.MainController - Started MainController in 0.467 seconds (JVM running for 782.528)
-[INFO ] 11:45:36.130 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:45:38.040 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 11:45:38.041 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 11:45:38.042 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 11:45:38.059 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-[INFO ] 11:45:38.076 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-[INFO ] 11:46:33.165 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-[INFO ] 11:46:33.178 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-[INFO ] 11:46:33.236 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:46:33.237 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:46:33.395 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:46:33.396 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:46:33.397 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:46:33.397 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:46:33.411 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:46:33.412 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 173 ms
-[INFO ] 11:46:33.578 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:46:33.581 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:46:33.583 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:46:33.678 com.kjm.test.MainController - Started MainController in 0.464 seconds (JVM running for 840.077)
-[INFO ] 11:46:33.679 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:47:11.555 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:47:11.556 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:47:11.695 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:47:11.695 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:47:11.696 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:47:11.696 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:47:11.712 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:47:11.713 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 156 ms
-[INFO ] 11:47:11.846 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:47:11.849 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:47:11.850 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:47:11.947 com.kjm.test.MainController - Started MainController in 0.411 seconds (JVM running for 878.346)
-[INFO ] 11:47:11.948 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:47:13.478 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:47:13.479 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:47:13.614 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:47:13.615 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:47:13.616 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:47:13.616 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:47:13.633 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:47:13.633 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 153 ms
-[INFO ] 11:47:13.771 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:47:13.774 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:47:13.775 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:47:13.871 com.kjm.test.MainController - Started MainController in 0.412 seconds (JVM running for 880.271)
-[INFO ] 11:47:13.872 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:48:04.877 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:48:04.878 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:48:05.017 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:48:05.018 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:48:05.019 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:48:05.019 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:48:05.036 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:48:05.037 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 158 ms
-[INFO ] 11:48:05.185 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:48:05.189 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:48:05.191 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:48:05.284 com.kjm.test.MainController - Started MainController in 0.429 seconds (JVM running for 931.683)
-[INFO ] 11:48:05.286 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 11:48:47.207 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 11:48:47.208 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 11:48:47.360 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 11:48:47.361 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:48:47.362 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 11:48:47.362 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 11:48:47.375 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 11:48:47.376 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 167 ms
-[INFO ] 11:48:47.509 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 11:48:47.514 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 11:48:47.516 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 11:48:47.617 com.kjm.test.MainController - Started MainController in 0.429 seconds (JVM running for 974.016)
-[INFO ] 11:48:47.618 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:13:15.581 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:13:15.582 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:13:15.706 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:13:15.707 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:13:15.707 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:13:15.707 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:13:15.719 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:13:15.720 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 137 ms
-[INFO ] 12:13:15.842 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:13:15.845 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:13:15.846 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:13:15.939 com.kjm.test.MainController - Started MainController in 0.376 seconds (JVM running for 2439.163)
-[INFO ] 12:13:15.940 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:24:12.891 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:24:12.891 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:24:13.042 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:24:13.043 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:24:13.044 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:24:13.044 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:24:13.057 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:24:13.058 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 165 ms
-[INFO ] 12:24:13.233 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:24:13.237 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:24:13.239 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:24:13.344 com.kjm.test.MainController - Started MainController in 0.481 seconds (JVM running for 3096.569)
-[INFO ] 12:24:13.345 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:24:25.992 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:24:25.992 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:24:26.118 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:24:26.119 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:24:26.119 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:24:26.119 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:24:26.134 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:24:26.134 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 140 ms
-[INFO ] 12:24:26.267 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:24:26.269 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:24:26.271 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:24:26.369 com.kjm.test.MainController - Started MainController in 0.398 seconds (JVM running for 3109.595)
-[INFO ] 12:24:26.370 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:26:44.245 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:26:44.245 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:26:44.369 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:26:44.369 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:26:44.369 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:26:44.370 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:26:44.385 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:26:44.385 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 138 ms
-[INFO ] 12:26:44.521 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:26:44.524 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:26:44.526 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:26:44.625 com.kjm.test.MainController - Started MainController in 0.398 seconds (JVM running for 3247.85)
-[INFO ] 12:26:44.626 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:27:08.389 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:27:08.390 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:27:08.517 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:27:08.518 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:08.518 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:27:08.518 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:27:08.531 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:27:08.532 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 141 ms
-[INFO ] 12:27:08.684 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:27:08.687 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:08.688 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:27:08.792 com.kjm.test.MainController - Started MainController in 0.42 seconds (JVM running for 3272.017)
-[INFO ] 12:27:08.793 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:27:10.313 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:27:10.313 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:27:10.425 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:27:10.426 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:10.426 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:27:10.427 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:27:10.441 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:27:10.442 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 127 ms
-[INFO ] 12:27:10.558 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:27:10.561 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:10.563 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:27:10.656 com.kjm.test.MainController - Started MainController in 0.362 seconds (JVM running for 3273.881)
-[INFO ] 12:27:10.657 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:27:43.533 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:27:43.533 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:27:43.680 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:27:43.681 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:43.681 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:27:43.681 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:27:43.698 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:27:43.699 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 164 ms
-[INFO ] 12:27:43.820 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:27:43.824 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:27:43.825 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:27:43.935 com.kjm.test.MainController - Started MainController in 0.422 seconds (JVM running for 3307.16)
-[INFO ] 12:27:43.936 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:28:20.254 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 12:28:20.255 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 12:28:20.257 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 12:28:38.967 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:28:38.968 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:28:39.091 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:28:39.092 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:28:39.093 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:28:39.093 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:28:39.109 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:28:39.109 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 140 ms
-[INFO ] 12:28:39.238 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:28:39.241 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:28:39.242 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:28:39.341 com.kjm.test.MainController - Started MainController in 0.393 seconds (JVM running for 3362.566)
-[INFO ] 12:28:39.343 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:29:00.074 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:29:00.074 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:29:00.201 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:29:00.202 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:29:00.203 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:29:00.203 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:29:00.220 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:29:00.221 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 145 ms
-[INFO ] 12:29:00.363 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:29:00.366 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:29:00.368 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:29:00.470 com.kjm.test.MainController - Started MainController in 0.416 seconds (JVM running for 3383.695)
-[INFO ] 12:29:00.471 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:35:50.050 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:35:50.050 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:35:50.183 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:35:50.184 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:35:50.184 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:35:50.185 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:35:50.197 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:35:50.197 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 145 ms
-[INFO ] 12:35:50.331 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:35:50.335 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:35:50.337 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:35:50.431 com.kjm.test.MainController - Started MainController in 0.402 seconds (JVM running for 3793.656)
-[INFO ] 12:35:50.432 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:38:45.681 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:38:45.681 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:38:45.811 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:38:45.812 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:38:45.812 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:38:45.812 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:38:45.828 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:38:45.829 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 146 ms
-[INFO ] 12:38:45.958 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:38:45.960 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:38:45.962 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:38:46.057 com.kjm.test.MainController - Started MainController in 0.394 seconds (JVM running for 3969.282)
-[INFO ] 12:38:46.058 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:38:59.703 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:38:59.704 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:38:59.815 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:38:59.816 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:38:59.816 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:38:59.816 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:38:59.830 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:38:59.831 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 126 ms
-[INFO ] 12:38:59.949 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:38:59.952 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:38:59.954 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:39:00.048 com.kjm.test.MainController - Started MainController in 0.361 seconds (JVM running for 3983.273)
-[INFO ] 12:39:00.049 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:39:29.860 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:39:29.861 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:39:30.006 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:39:30.007 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:39:30.007 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:39:30.007 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:39:30.032 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:39:30.033 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 170 ms
-[INFO ] 12:39:30.151 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:39:30.154 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:39:30.155 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:39:30.249 com.kjm.test.MainController - Started MainController in 0.407 seconds (JVM running for 4013.474)
-[INFO ] 12:39:30.250 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:43:38.267 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:43:38.267 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:43:38.383 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:43:38.384 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:43:38.384 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:43:38.385 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:43:38.397 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:43:38.397 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 128 ms
-[INFO ] 12:43:38.523 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:43:38.527 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:43:38.528 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:43:38.621 com.kjm.test.MainController - Started MainController in 0.372 seconds (JVM running for 4261.846)
-[INFO ] 12:43:38.623 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:46:07.607 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:46:07.607 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:46:07.731 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:46:07.731 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:46:07.732 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:46:07.732 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:46:07.746 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:46:07.747 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 138 ms
-[INFO ] 12:46:07.870 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:46:07.873 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:46:07.875 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:46:07.971 com.kjm.test.MainController - Started MainController in 0.386 seconds (JVM running for 4411.197)
-[INFO ] 12:46:07.973 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:46:20.613 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:46:20.613 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:46:20.749 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:46:20.750 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:46:20.750 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:46:20.750 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:46:20.767 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:46:20.768 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 153 ms
-[INFO ] 12:46:20.919 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:46:20.922 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:46:20.923 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:46:21.024 com.kjm.test.MainController - Started MainController in 0.43 seconds (JVM running for 4424.249)
-[INFO ] 12:46:21.025 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:47:34.279 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:47:34.280 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:47:34.399 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:47:34.400 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:47:34.400 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:47:34.400 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:47:34.414 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:47:34.415 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 134 ms
-[INFO ] 12:47:34.533 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:47:34.536 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:47:34.538 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:47:34.628 com.kjm.test.MainController - Started MainController in 0.366 seconds (JVM running for 4497.853)
-[INFO ] 12:47:34.629 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 12:48:51.902 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 12:48:51.902 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 12:48:52.013 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 12:48:52.014 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:48:52.014 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:48:52.014 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 12:48:52.028 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:48:52.029 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 125 ms
-[INFO ] 12:48:52.146 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 12:48:52.149 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 12:48:52.150 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 12:48:52.240 com.kjm.test.MainController - Started MainController in 0.356 seconds (JVM running for 4575.465)
-[INFO ] 12:48:52.241 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:09:00.699 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:09:00.699 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:09:00.701 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[ERROR] 13:09:00.716 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:248)
+[INFO ] 16:33:10.260 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:33:10.263 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:33:10.495 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 16:33:10.496 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 16:33:12.068 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:33:12.079 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:33:12.080 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:33:12.080 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:33:12.154 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:33:12.155 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1659 ms
+[INFO ] 16:33:12.759 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:33:12.774 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:33:12.792 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:33:12.946 com.kjm.test.MainController - Started MainController in 3.203 seconds (JVM running for 3.877)
+[INFO ] 16:36:22.983 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 16:36:22.984 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 16:36:22.986 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[ERROR] 16:36:23.176 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('y' (code 121)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"name":"hello","gender":"man"},{"name:"yes", "gender" : "no"}]"; line: 1, column: 43] (through reference chain: java.util.ArrayList[1])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:392)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:363)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:371)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4675)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3630)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3613)
+	at com.kjm.test.convert.ConvertController.test(ConvertController.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -497,819 +78,346 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-[ERROR] 13:11:17.791 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:248)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:12:02.691 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:12:02.691 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:12:02.826 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:12:02.826 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:12:02.827 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:12:02.827 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:12:02.843 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:12:02.844 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 151 ms
-[INFO ] 13:12:02.980 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:12:02.983 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:12:02.984 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:12:03.084 com.kjm.test.MainController - Started MainController in 0.42 seconds (JVM running for 5966.309)
-[INFO ] 13:12:03.085 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:12:08.247 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:12:08.248 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:12:08.250 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[ERROR] 13:12:08.255 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:12:56.128 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:12:56.129 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:12:56.254 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:12:56.255 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:12:56.255 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:12:56.256 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:12:56.270 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:12:56.271 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 141 ms
-[INFO ] 13:12:56.409 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:12:56.412 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:12:56.413 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:12:56.505 com.kjm.test.MainController - Started MainController in 0.394 seconds (JVM running for 6019.73)
-[INFO ] 13:12:56.505 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:13:33.365 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:13:33.365 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:13:33.521 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:13:33.521 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:33.521 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:13:33.521 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:13:33.536 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:13:33.536 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 169 ms
-[INFO ] 13:13:33.678 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:13:33.682 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:33.684 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:13:33.785 com.kjm.test.MainController - Started MainController in 0.437 seconds (JVM running for 6057.01)
-[INFO ] 13:13:33.786 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:13:35.318 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:13:35.318 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:13:35.429 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:13:35.430 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:35.430 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:13:35.430 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:13:35.442 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:13:35.442 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 122 ms
-[INFO ] 13:13:35.561 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:13:35.564 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:35.565 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:13:35.654 com.kjm.test.MainController - Started MainController in 0.352 seconds (JVM running for 6058.879)
-[INFO ] 13:13:35.655 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:13:57.417 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:13:57.417 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:13:57.531 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:13:57.531 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:57.532 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:13:57.532 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:13:57.549 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:13:57.549 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130 ms
-[INFO ] 13:13:57.683 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:13:57.686 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:13:57.688 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:13:57.787 com.kjm.test.MainController - Started MainController in 0.387 seconds (JVM running for 6081.013)
-[INFO ] 13:13:57.788 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:15:02.878 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:15:02.879 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:15:02.881 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[ERROR] 13:15:02.887 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[ERROR] 13:15:53.655 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[ERROR] 13:16:27.975 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:16:44.891 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:16:44.892 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:16:45.001 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:16:45.002 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:16:45.002 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:16:45.002 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:16:45.014 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:16:45.015 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 122 ms
-[INFO ] 13:16:45.103 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:16:45.106 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:16:45.107 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:16:45.185 com.kjm.test.MainController - Started MainController in 0.31 seconds (JVM running for 6248.41)
-[INFO ] 13:16:45.186 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:17:20.058 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:17:20.058 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:17:20.183 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:17:20.184 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:17:20.184 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:17:20.185 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:17:20.199 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:17:20.199 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 139 ms
-[INFO ] 13:17:20.286 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:17:20.288 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:17:20.289 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:17:20.366 com.kjm.test.MainController - Started MainController in 0.326 seconds (JVM running for 6283.591)
-[INFO ] 13:17:20.367 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:17:26.224 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:17:26.225 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:17:26.226 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[ERROR] 13:17:26.236 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:18:30.550 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:18:30.551 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:18:30.679 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:18:30.680 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:18:30.680 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:18:30.681 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:18:30.697 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:18:30.698 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 146 ms
-[INFO ] 13:18:30.797 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:18:30.801 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:18:30.803 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:18:30.891 com.kjm.test.MainController - Started MainController in 0.358 seconds (JVM running for 6354.116)
-[INFO ] 13:18:30.892 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:18:34.623 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:18:34.624 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:18:34.625 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[ERROR] 13:18:34.633 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[ERROR] 13:19:06.298 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:19:46.116 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:19:46.117 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:19:46.225 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:19:46.225 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:19:46.226 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:19:46.226 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:19:46.238 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:19:46.238 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 120 ms
-[INFO ] 13:19:46.345 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:19:46.348 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:19:46.349 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:19:46.421 com.kjm.test.MainController - Started MainController in 0.32 seconds (JVM running for 6429.646)
-[INFO ] 13:19:46.422 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:20:02.393 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:20:02.394 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:20:02.395 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[ERROR] 13:20:02.400 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.kjm.test.demo.InfoController.upload(InfoController.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[INFO ] 13:21:12.732 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 5132 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:21:12.733 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:21:12.846 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:21:12.847 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:21:12.847 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:21:12.847 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:21:12.862 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:21:12.862 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 128 ms
-[INFO ] 13:21:12.982 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:21:12.984 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:21:12.986 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:21:13.080 com.kjm.test.MainController - Started MainController in 0.364 seconds (JVM running for 6516.306)
-[INFO ] 13:21:13.081 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:21:57.603 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:21:57.604 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:21:57.811 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 13:21:57.812 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 13:21:58.929 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:21:58.937 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:21:58.938 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:21:58.938 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:21:59.002 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:21:59.003 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1191 ms
-[INFO ] 13:21:59.613 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:21:59.626 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:21:59.648 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:21:59.775 com.kjm.test.MainController - Started MainController in 2.583 seconds (JVM running for 3.027)
-[INFO ] 13:22:02.071 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:22:02.072 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:22:02.074 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 13:24:36.743 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:24:36.744 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:24:36.991 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:24:36.992 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:24:36.992 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:24:36.992 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:24:37.008 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:24:37.009 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 262 ms
-[INFO ] 13:24:37.214 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:24:37.218 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:24:37.220 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:24:37.325 com.kjm.test.MainController - Started MainController in 0.619 seconds (JVM running for 160.577)
-[INFO ] 13:24:37.327 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:28:58.343 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:28:58.344 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:28:58.614 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:28:58.615 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:28:58.615 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:28:58.616 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:28:58.640 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:28:58.641 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 294 ms
-[INFO ] 13:28:58.862 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:28:58.866 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:28:58.867 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:28:58.971 com.kjm.test.MainController - Started MainController in 0.662 seconds (JVM running for 422.224)
-[INFO ] 13:28:58.977 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:32:01.213 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:32:01.214 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:32:01.454 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:32:01.455 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:32:01.456 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:32:01.456 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:32:01.475 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:32:01.475 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 259 ms
-[INFO ] 13:32:01.669 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:32:01.672 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:32:01.674 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:32:01.774 com.kjm.test.MainController - Started MainController in 0.596 seconds (JVM running for 605.027)
-[INFO ] 13:32:01.775 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:32:20.857 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:32:20.858 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:32:20.860 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 13:36:27.762 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:36:27.763 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:36:27.954 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:36:27.955 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:36:27.955 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:36:27.956 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:36:27.973 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:36:27.973 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 208 ms
-[INFO ] 13:36:28.140 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:36:28.144 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:36:28.146 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:36:28.244 com.kjm.test.MainController - Started MainController in 0.511 seconds (JVM running for 871.496)
-[INFO ] 13:36:28.246 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:36:55.038 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:36:55.038 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:36:55.234 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:36:55.235 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:36:55.235 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:36:55.235 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:36:55.250 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:36:55.251 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 210 ms
-[INFO ] 13:36:55.423 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:36:55.426 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:36:55.428 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:36:55.525 com.kjm.test.MainController - Started MainController in 0.518 seconds (JVM running for 898.778)
-[INFO ] 13:36:55.527 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:38:54.193 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:38:54.193 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:38:54.364 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:38:54.365 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:38:54.365 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:38:54.366 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:38:54.379 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:38:54.380 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 185 ms
-[INFO ] 13:38:54.546 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:38:54.549 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:38:54.551 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:38:54.652 com.kjm.test.MainController - Started MainController in 0.483 seconds (JVM running for 1017.905)
-[INFO ] 13:38:54.653 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:40:18.948 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:40:18.948 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:40:19.121 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:40:19.122 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:40:19.122 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:40:19.123 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:40:19.138 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:40:19.139 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 189 ms
-[INFO ] 13:40:19.313 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:40:19.319 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:40:19.321 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:40:19.431 com.kjm.test.MainController - Started MainController in 0.509 seconds (JVM running for 1102.684)
-[INFO ] 13:40:19.433 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:41:26.577 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:41:26.578 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:41:26.746 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:41:26.747 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:41:26.748 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:41:26.748 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:41:26.762 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:41:26.762 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 182 ms
-[INFO ] 13:41:26.950 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:41:26.953 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:41:26.954 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:41:27.053 com.kjm.test.MainController - Started MainController in 0.501 seconds (JVM running for 1170.306)
-[INFO ] 13:41:27.054 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:41:51.724 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 13:41:51.725 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 13:41:51.726 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 13:42:51.758 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:42:51.759 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:42:51.924 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:42:51.925 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:42:51.925 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:42:51.925 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:42:51.944 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:42:51.945 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 184 ms
-[INFO ] 13:42:52.117 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:42:52.120 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:42:52.122 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:42:52.221 com.kjm.test.MainController - Started MainController in 0.485 seconds (JVM running for 1255.473)
-[INFO ] 13:42:52.222 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:44:02.384 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:44:02.385 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:44:02.548 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:44:02.549 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:44:02.550 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:44:02.550 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:44:02.565 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:44:02.566 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 179 ms
-[INFO ] 13:44:02.720 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:44:02.724 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:44:02.726 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:44:02.827 com.kjm.test.MainController - Started MainController in 0.465 seconds (JVM running for 1326.08)
-[INFO ] 13:44:02.828 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:44:04.370 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:44:04.371 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:44:04.504 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:44:04.505 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:44:04.505 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:44:04.506 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:44:04.519 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:44:04.519 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 146 ms
-[INFO ] 13:44:04.680 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:44:04.683 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:44:04.685 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:44:04.782 com.kjm.test.MainController - Started MainController in 0.434 seconds (JVM running for 1328.035)
-[INFO ] 13:44:04.784 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:45:11.979 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:45:11.980 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:45:12.117 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:45:12.117 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:45:12.118 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:45:12.118 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:45:12.131 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:45:12.131 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 150 ms
-[INFO ] 13:45:12.275 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:45:12.278 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:45:12.279 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:45:12.387 com.kjm.test.MainController - Started MainController in 0.429 seconds (JVM running for 1395.639)
-[INFO ] 13:45:12.389 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 13:45:20.964 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 13:45:20.964 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
-[INFO ] 13:45:21.091 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
-[INFO ] 13:45:21.092 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:45:21.092 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 13:45:21.092 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
-[INFO ] 13:45:21.106 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 13:45:21.106 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 140 ms
-[INFO ] 13:45:21.254 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 13:45:21.257 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
-[INFO ] 13:45:21.259 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
-[INFO ] 13:45:21.359 com.kjm.test.MainController - Started MainController in 0.413 seconds (JVM running for 1404.612)
-[INFO ] 13:45:21.361 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 14:05:15.058 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 18272 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
-[INFO ] 14:05:15.059 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('y' (code 121)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"name":"hello","gender":"man"},{"name:"yes", "gender" : "no"}]"; line: 1, column: 43]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:659)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon2(ReaderBasedJsonParser.java:2310)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon(ReaderBasedJsonParser.java:2289)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:737)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	... 57 common frames omitted
+[INFO ] 16:38:03.247 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:38:03.247 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:38:03.526 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:38:03.527 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:38:03.527 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:38:03.528 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:38:03.544 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:38:03.545 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 293 ms
+[INFO ] 16:38:03.776 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:38:03.780 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:38:03.782 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:38:03.895 com.kjm.test.MainController - Started MainController in 0.686 seconds (JVM running for 294.827)
+[INFO ] 16:38:03.897 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 16:38:07.457 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:38:07.457 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:38:07.679 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:38:07.680 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:38:07.683 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:38:07.684 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:38:07.704 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:38:07.705 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 246 ms
+[INFO ] 16:38:07.900 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:38:07.905 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:38:07.908 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:38:08.008 com.kjm.test.MainController - Started MainController in 0.58 seconds (JVM running for 298.939)
+[INFO ] 16:38:08.009 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 16:39:56.577 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:39:56.577 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:39:56.789 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:39:56.790 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:39:56.791 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:39:56.791 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:39:56.808 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:39:56.809 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 230 ms
+[INFO ] 16:39:56.993 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:39:56.997 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:39:56.999 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:39:57.102 com.kjm.test.MainController - Started MainController in 0.554 seconds (JVM running for 408.034)
+[INFO ] 16:39:57.104 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 16:40:40.024 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:40:40.025 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:40:40.232 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:40:40.233 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:40:40.234 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:40:40.234 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:40:40.252 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:40:40.253 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 226 ms
+[INFO ] 16:40:40.460 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:40:40.463 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:40:40.465 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:40:40.571 com.kjm.test.MainController - Started MainController in 0.576 seconds (JVM running for 451.503)
+[INFO ] 16:40:40.572 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 16:41:17.465 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 16:41:17.466 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 16:41:17.680 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:41:17.681 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:41:17.681 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:41:17.682 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 16:41:17.699 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:41:17.700 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 232 ms
+[INFO ] 16:41:17.864 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 16:41:17.868 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:41:17.870 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:41:17.968 com.kjm.test.MainController - Started MainController in 0.532 seconds (JVM running for 488.899)
+[INFO ] 16:41:17.969 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:25:46.166 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:25:46.166 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:25:46.363 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:25:46.364 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:25:46.364 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:25:46.365 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:25:46.379 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:25:46.380 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 211 ms
+[INFO ] 17:25:46.570 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:25:46.575 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:25:46.577 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:25:46.677 com.kjm.test.MainController - Started MainController in 0.54 seconds (JVM running for 3157.609)
+[INFO ] 17:25:46.680 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper:
+      Did not match:
+         - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found beans of type 'com.fasterxml.jackson.databind.ObjectMapper' objectMapper (OnBeanCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport' webConfig (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+[INFO ] 17:27:36.242 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:27:36.242 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:27:36.427 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:27:36.428 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:27:36.428 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:27:36.429 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:27:36.443 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:27:36.443 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 199 ms
+[INFO ] 17:27:36.598 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:27:36.602 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:27:36.604 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:27:36.702 com.kjm.test.MainController - Started MainController in 0.486 seconds (JVM running for 3267.633)
+[INFO ] 17:27:36.704 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:37:31.995 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:37:31.996 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:37:32.197 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:37:32.198 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:37:32.198 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:37:32.199 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:37:32.215 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:37:32.216 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 218 ms
+[INFO ] 17:37:32.384 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:37:32.389 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:37:32.391 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:37:32.497 com.kjm.test.MainController - Started MainController in 0.53 seconds (JVM running for 3863.429)
+[INFO ] 17:37:32.499 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:37:35.029 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:37:35.030 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:37:35.221 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:37:35.221 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:37:35.222 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:37:35.222 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:37:35.237 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:37:35.238 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 206 ms
+[INFO ] 17:37:35.387 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:37:35.391 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:37:35.394 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:37:35.490 com.kjm.test.MainController - Started MainController in 0.486 seconds (JVM running for 3866.421)
+[INFO ] 17:37:35.492 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:37:37.243 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 17:37:37.244 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 17:37:37.245 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 17:44:25.993 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:44:25.994 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:44:26.151 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:44:26.151 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:44:26.152 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:44:26.152 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:44:26.165 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:44:26.166 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 171 ms
+[INFO ] 17:44:26.317 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:44:26.321 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:44:26.323 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:44:26.417 com.kjm.test.MainController - Started MainController in 0.446 seconds (JVM running for 4277.349)
+[INFO ] 17:44:26.418 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:44:27.948 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:44:27.948 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:44:28.111 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:44:28.112 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:44:28.113 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:44:28.113 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:44:28.126 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:44:28.127 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 177 ms
+[INFO ] 17:44:28.284 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:44:28.289 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:44:28.291 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:44:28.387 com.kjm.test.MainController - Started MainController in 0.459 seconds (JVM running for 4279.318)
+[INFO ] 17:44:28.388 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:46:13.931 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:46:13.931 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:46:14.089 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:46:14.090 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:46:14.090 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:46:14.090 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:46:14.105 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:46:14.106 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 172 ms
+[INFO ] 17:46:14.229 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:46:14.231 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:46:14.233 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:46:14.326 com.kjm.test.MainController - Started MainController in 0.417 seconds (JVM running for 4385.258)
+[INFO ] 17:46:14.327 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:46:19.273 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 17:46:19.274 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 17:46:19.276 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 17:50:32.382 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:50:32.383 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:50:32.550 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:50:32.551 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:50:32.551 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:50:32.551 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:50:32.565 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:50:32.565 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 181 ms
+[INFO ] 17:50:32.690 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:50:32.693 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:50:32.695 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:50:32.801 com.kjm.test.MainController - Started MainController in 0.44 seconds (JVM running for 4643.732)
+[INFO ] 17:50:32.802 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:50:35.136 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 17:50:35.136 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 17:50:35.138 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 17:51:23.817 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:51:23.818 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:51:23.962 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:51:23.963 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:51:23.963 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:51:23.964 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:51:23.977 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:51:23.977 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 157 ms
+[INFO ] 17:51:24.109 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:51:24.113 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:51:24.114 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:51:24.206 com.kjm.test.MainController - Started MainController in 0.409 seconds (JVM running for 4695.138)
+[INFO ] 17:51:24.207 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:53:15.842 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 17:53:15.843 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 17:53:15.999 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:53:16.001 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:53:16.002 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:53:16.002 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 17:53:16.023 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:53:16.024 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 179 ms
+[INFO ] 17:53:16.162 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 17:53:16.165 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:53:16.166 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:53:16.260 com.kjm.test.MainController - Started MainController in 0.443 seconds (JVM running for 4807.191)
+[INFO ] 17:53:16.261 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 17:56:23.353 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 17:56:23.354 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 17:56:23.356 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 18:00:50.083 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:00:50.083 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:00:50.221 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:00:50.222 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:00:50.222 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:00:50.222 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:00:50.235 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:00:50.236 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 151 ms
+[INFO ] 18:00:50.361 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:00:50.365 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:00:50.369 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:00:50.464 com.kjm.test.MainController - Started MainController in 0.402 seconds (JVM running for 5261.396)
+[INFO ] 18:00:50.465 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:00:52.838 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 18:00:52.838 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 18:00:52.840 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 18:01:41.453 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:01:41.454 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:01:41.585 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:01:41.586 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:01:41.586 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:01:41.586 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:01:41.599 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:01:41.600 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 145 ms
+[INFO ] 18:01:41.709 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:01:41.712 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:01:41.713 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:01:41.807 com.kjm.test.MainController - Started MainController in 0.375 seconds (JVM running for 5312.739)
+[INFO ] 18:01:41.808 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:02:14.649 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:02:14.649 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:02:14.773 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:02:14.773 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:02:14.774 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:02:14.774 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:02:14.786 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:02:14.787 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 136 ms
+[INFO ] 18:02:14.898 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:02:14.900 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:02:14.905 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:02:14.996 com.kjm.test.MainController - Started MainController in 0.366 seconds (JVM running for 5345.927)
+[INFO ] 18:02:14.997 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:03:06.447 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 18:03:06.448 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 18:03:06.450 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 18:03:27.197 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:03:27.198 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:03:27.326 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:03:27.327 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:03:27.327 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:03:27.327 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:03:27.342 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:03:27.342 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 143 ms
+[INFO ] 18:03:27.466 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:03:27.470 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:03:27.472 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:03:27.564 com.kjm.test.MainController - Started MainController in 0.384 seconds (JVM running for 5418.495)
+[INFO ] 18:03:27.565 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:03:29.094 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:03:29.095 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:03:29.219 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:03:29.220 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:03:29.220 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:03:29.220 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:03:29.233 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:03:29.233 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 137 ms
+[INFO ] 18:03:29.359 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:03:29.362 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:03:29.363 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:03:29.457 com.kjm.test.MainController - Started MainController in 0.379 seconds (JVM running for 5420.388)
+[INFO ] 18:03:29.458 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:05:47.270 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 24084 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:05:47.270 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:05:47.427 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:05:47.428 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:05:47.428 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:05:47.428 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:05:47.447 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:05:47.448 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 176 ms
+[INFO ] 18:05:47.598 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:05:47.601 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:05:47.602 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:05:47.703 com.kjm.test.MainController - Started MainController in 0.452 seconds (JVM running for 5558.635)
+[INFO ] 18:05:47.704 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

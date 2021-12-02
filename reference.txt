@@ -10,3 +10,4 @@
 10. Spring Boot, MySql Deploy to heroku : https://parkbongil.github.io/heroku-spring-boot/
 11. Spring Boot Oauth2 Authorization Server : https://www.skyer9.pe.kr/wordpress/?p=2294
 12. tensorflow js example repository : https://github.com/tensorflow/tfjs-examples
+13. jdk 1.8 collection stream, filter, map, foreach, sort : https://lts0606.tistory.com/157

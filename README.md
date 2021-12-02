@@ -1,5 +1,7 @@
 # Spring Boot for REST API 표준 설정
 ### 아래 서순은 참고용도로만 사용할 것
+### demo package : mysql을 사용한 기본적인 CRUD
+### convert package : form-data 주고 받을때 사용하는 기능목록
 
 ## 기본 설정 서순
 1. eclipse or vscode로 spring boot 프로젝트 생성(아래는 vscode로 할 경우 서순)
@@ -79,5 +81,16 @@
 7. file list의 경우 file들의 정보를 list에 담아서 리턴해야하기 때문에 FileData라는 class 추가
 
 ## form-data + json list string
+1. File들과 json list 형식의 텍스트를 처리할때 방법
+2. 가장 간단한 방법은 RequestPart와 RequestParam을 사용
+    - 컨트롤러에 각각 파일은 list로, json은 string으로 받아서 처리하도록 method 생성
+    - jsonlist string을 class로 맵핑 시키기 위해 맵핑할 class 생성
+    - 이후 objectmapping으로 string에서 list로 변환
+3. 더 나은 방법으로는 PropertyEditorSupport, Converter, Formatter가 있음
+4. 여기선 Converter로 구현
+    - converter implements를 한 converter class 생성
+    - webmvcconfigurationsupport extends를 한 config class 생성
+    - 위 두개의 class를 통해 controller에서 string을 받아왔는데 맵핑하는 타입이 List<HelloTest>라면 위의 TestHelloConverter가 실행
+5. 추가로 stream을 활용해서 list 내용물 가져오는 기능도 구현
 
 ## json string model class mapping
