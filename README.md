@@ -2,6 +2,7 @@
 ### 아래 서순은 참고용도로만 사용할 것
 ### demo package : mysql을 사용한 기본적인 CRUD
 ### convert package : form-data 주고 받을때 사용하는 기능목록
+### mapping package : json 문자열을 보낼때 model class로 맵핑하는 방법
 
 ## 기본 설정 서순
 1. eclipse or vscode로 spring boot 프로젝트 생성(아래는 vscode로 할 경우 서순)
@@ -94,3 +95,7 @@
 5. 추가로 stream을 활용해서 list 내용물 가져오는 기능도 구현
 
 ## json string model class mapping
+1. json 데이터 양식에 맞게 model 생성
+2. controller 생성
+    - RequestBody를 꼭 붙여야함
+3. 만약 json array를 받으려면 controller에서 list로 파라미터를 변경해주면 됨

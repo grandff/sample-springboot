@@ -421,3 +421,38 @@ Unconditional classes:
 [INFO ] 18:05:47.602 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
 [INFO ] 18:05:47.703 com.kjm.test.MainController - Started MainController in 0.452 seconds (JVM running for 5558.635)
 [INFO ] 18:05:47.704 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:11:19.474 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 14940 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:11:19.476 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:11:19.681 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 18:11:19.681 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 18:11:20.779 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:11:20.788 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:11:20.789 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:11:20.789 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:11:20.852 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:11:20.852 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+[INFO ] 18:11:21.341 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:11:21.353 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:11:21.371 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:11:21.486 com.kjm.test.MainController - Started MainController in 2.426 seconds (JVM running for 2.893)
+[INFO ] 18:11:23.935 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 18:11:23.936 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 18:11:23.938 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[WARN ] 18:11:23.950 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+[INFO ] 18:19:48.871 com.kjm.test.MainController - Starting MainController using Java 11.0.12 on DESKTOP-198B43V with PID 14940 (D:\dev\workspaces\demo\bin\main started by dsaqa in D:\dev\workspaces\demo)
+[INFO ] 18:19:48.872 com.kjm.test.MainController - No active profile set, falling back to default profiles: default
+[INFO ] 18:19:49.149 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 18:19:49.150 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:19:49.151 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 18:19:49.151 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO ] 18:19:49.170 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 18:19:49.171 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 296 ms
+[INFO ] 18:19:49.405 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 18:19:49.411 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 18:19:49.412 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 18:19:49.530 com.kjm.test.MainController - Started MainController in 0.696 seconds (JVM running for 510.936)
+[INFO ] 18:19:49.533 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 18:19:53.857 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 18:19:53.857 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 18:19:53.859 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[WARN ] 18:19:53.866 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.kjm.test.mapping.model.UserInfo` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.kjm.test.mapping.model.UserInfo` from Array value (token `JsonToken.START_ARRAY`)<LF> at [Source: (PushbackInputStream); line: 1, column: 1]]
