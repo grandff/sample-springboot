@@ -106,4 +106,5 @@
     - 신용카드 등록해야함 플랜은 무료로
 3. settings에 추가된 db 접속 정보 확인 후 application.yml에 등록
     - mysql://[user name]:[password]@[Host name]/[password2]?reconnect=true
-    
+4. procfile 생성
+    - web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/demo-0.0.1-SNAPSHOT.jar
