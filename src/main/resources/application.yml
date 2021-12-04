@@ -17,9 +17,9 @@ spring :
         #username : root
         #password : admin
         # 운영
-        url : jdbc:mysql://bc1afd7316253c:b3cca948@us-cdbr-east-04.cleardb.com/heroku_637d928b1915b24?reconnect=true
-        username : bc1afd7316253c
-        password : b3cca948
+        url : jdbc:mysql://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@us-cdbr-east-04.cleardb.com/heroku_637d928b1915b24?reconnect=true
+        username : ${DATABASE_USERNAME}
+        password : ${DATABASE_PASSWORD}
         hikari :
             maximum-pool-size : 10  # 최대 pool size. default가 10
             connection-timeout : 5000
