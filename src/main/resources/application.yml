@@ -6,11 +6,16 @@ spring :
             max-file-size : 10MB    # 총 파일 사이즈
             max-request-size : 10MB # request 파일 사이즈
             location : D:\dev\workspaces\demo\upload
-    datasource :
+    datasource :    
         driver-class-name : com.mysql.cj.jdbc.Driver
-        url : jdbc:mysql://localhost:5000/world?serverTimeZone=UTC&CharacterEncoding=UTF-8
-        username : root
-        password : admin
+        # 개발
+        #url : jdbc:mysql://localhost:5000/world?serverTimeZone=UTC&CharacterEncoding=UTF-8
+        #username : root
+        #password : admin
+        # 운영
+        url : jdbc:mysql://bc1afd7316253c:b3cca948@us-cdbr-east-04.cleardb.com/heroku_637d928b1915b24?reconnect=true
+        username : bc1afd7316253c
+        password : b3cca948
         hikari :
             maximum-pool-size : 10  # 최대 pool size. default가 10
             connection-timeout : 5000

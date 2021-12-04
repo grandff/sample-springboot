@@ -99,3 +99,11 @@
 2. controller 생성
     - RequestBody를 꼭 붙여야함
 3. 만약 json array를 받으려면 controller에서 list로 파라미터를 변경해주면 됨
+
+## heroku deploy
+1. heroku 앱 생성
+2. resource에 ClearDB MySQL 추가
+    - 신용카드 등록해야함 플랜은 무료로
+3. settings에 추가된 db 접속 정보 확인 후 application.yml에 등록
+    - mysql://[user name]:[password]@[Host name]/[password2]?reconnect=true
+    
